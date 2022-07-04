@@ -1,5 +1,9 @@
-import { add } from './modules/math';
-import '../scss/style.scss';
+import '../scss/import.scss';
 
-const result = add(1, 3);
-console.log(result);
+const humBtn = document.querySelector('.hamburger');
+humBtn.addEventListener('click', () => {
+  humBtn.classList.toggle('_open');
+});
+
+const select = document.getElementById('select01');
+console.log(select, select.selectedIndex);
